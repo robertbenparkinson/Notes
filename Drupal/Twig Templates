@@ -1,0 +1,121 @@
+# All TWIG templates used on a single article
+
+```html
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/html.html.twig' -->
+	<!-- BEGIN OUTPUT from 'core/modules/toolbar/templates/toolbar.html.twig' -->
+		<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/container.html.twig' -->
+			<!-- BEGIN OUTPUT from 'core/modules/toolbar/templates/menu--toolbar.html.twig' -->
+			<!-- END OUTPUT from 'core/modules/toolbar/templates/menu--toolbar.html.twig' -->
+		<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/container.html.twig' -->
+		<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/links.html.twig'-->
+		<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/links.html.twig' -->
+		<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/input/form-element.html.twig' -->
+			<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/input/form-element-label.html.twig' -->
+			<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/input/form-element-label.html.twig' -->
+			<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/input/input--form-control.html.twig' -->
+			<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/input/input--form-control.html.twig' -->
+		<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/input/form-element.html.twig' -->
+	<!-- END OUTPUT from 'core/modules/toolbar/templates/toolbar.html.twig' -->
+	<!-- BEGIN OUTPUT from 'core/modules/system/templates/off-canvas-page-wrapper.html.twig' -->
+		<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/page.html.twig' -->
+			<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+				<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/block/block--system-branding-block.html.twig' -->
+				<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/block/block--system-branding-block.html.twig' -->
+			<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+			<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+				<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/block/block--system-menu-block--main.html.twig' -->
+					<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/menu/menu--main.html.twig' -->
+					<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/menu/menu--main.html.twig' -->
+				<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/block/block--system-menu-block--main.html.twig' -->
+				<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/block/block--system-menu-block--account.html.twig' -->
+					<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/menu/menu--account.html.twig' -->
+					<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/menu/menu--account.html.twig' -->
+				<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/block/block--system-menu-block--account.html.twig' -->
+			<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+			<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+				<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/block/block--system.html.twig' -->
+					<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/breadcrumb.html.twig' -->
+					<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/breadcrumb.html.twig' -->
+				<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/block/block--system.html.twig' -->
+				<!-- BEGIN OUTPUT from 'core/modules/system/templates/block--system-messages-block.html.twig' -->
+				<!-- END OUTPUT from 'core/modules/system/templates/block--system-messages-block.html.twig' -->
+				<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/block/block--local-tasks-block.html.twig' -->
+					<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/menu/menu-local-tasks.html.twig' -->
+						<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/menu/menu-local-task.html.twig' -->
+						<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/menu/menu-local-task.html.twig' -->
+						<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/menu/menu-local-task.html.twig' -->
+						<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/menu/menu-local-task.html.twig' -->			
+						<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/menu/menu-local-task.html.twig' -->
+						<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/menu/menu-local-task.html.twig' -->
+					<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/menu/menu-local-tasks.html.twig' -->
+				<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/block/block--local-tasks-block.html.twig' -->
+			<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+			<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+			<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+			<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+				<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/block/block--page-title-block.html.twig' -->
+					<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/page-title.html.twig' -->
+						<!-- BEGIN OUTPUT from 'core/modules/node/templates/field--node--title.html.twig' -->
+						<!-- END OUTPUT from 'core/modules/node/templates/field--node--title.html.twig' -->
+					<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/page-title.html.twig' -->
+				<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/block/block--page-title-block.html.twig' -->
+				<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/block/block--system.html.twig' -->
+					<!-- BEGIN OUTPUT from 'themes/custom/elena/templates/node--full.html.twig' -->
+						<!-- BEGIN OUTPUT from 'core/modules/rdf/templates/rdf-metadata.html.twig' -->
+						<!-- END OUTPUT from 'core/modules/rdf/templates/rdf-metadata.html.twig' -->
+						<!-- BEGIN OUTPUT from 'core/modules/rdf/templates/rdf-metadata.html.twig' -->
+						<!-- END OUTPUT from 'core/modules/rdf/templates/rdf-metadata.html.twig' -->
+						<!-- BEGIN OUTPUT from 'core/modules/user/templates/user.html.twig' -->
+						<!-- END OUTPUT from 'core/modules/user/templates/user.html.twig' -->
+						<!-- BEGIN OUTPUT from 'core/modules/node/templates/field--node--uid.html.twig' -->
+							<!-- BEGIN OUTPUT from 'core/modules/user/templates/username.html.twig' -->
+							<!-- END OUTPUT from 'core/modules/user/templates/username.html.twig' -->
+						<!-- END OUTPUT from 'core/modules/node/templates/field--node--uid.html.twig' -->
+						<!-- BEGIN OUTPUT from 'core/modules/node/templates/field--node--created.html.twig' -->
+						<!-- END OUTPUT from 'core/modules/node/templates/field--node--created.html.twig' -->
+						<!-- BEGIN OUTPUT from 'core/modules/rdf/templates/rdf-metadata.html.twig' -->
+						<!-- END OUTPUT from 'core/modules/rdf/templates/rdf-metadata.html.twig' -->
+						<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+							<!-- BEGIN OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+								<!-- BEGIN OUTPUT from 'core/modules/image/templates/image-style.html.twig' -->
+									<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/image.html.twig' -->
+									<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/image.html.twig' -->
+								<!-- END OUTPUT from 'core/modules/image/templates/image-style.html.twig' -->
+							<!-- END OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->     
+						<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+						<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->   
+						<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+						<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+						<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+						<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/links.html.twig' -->
+						<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/links.html.twig' -->
+						<!-- BEGIN OUTPUT from 'core/modules/comment/templates/field--comment.html.twig' -->
+						<!-- END OUTPUT from 'core/modules/comment/templates/field--comment.html.twig' -->
+					<!-- END OUTPUT from 'themes/custom/elena/templates/node--full.html.twig' -->
+				<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/block/block--system.html.twig' -->
+			<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+			<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+				<!-- BEGIN OUTPUT from 'core/modules/system/templates/block--system-menu-block.html.twig' -->
+					<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/menu/menu.html.twig' -->
+					<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/menu/menu.html.twig' -->
+				<!-- END OUTPUT from 'core/modules/system/templates/block--system-menu-block.html.twig' -->
+				<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/block/block--system.html.twig' -->
+				<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/block/block--system.html.twig' -->
+			<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+		!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/page.html.twig' -->
+	<!-- END OUTPUT from 'core/modules/system/templates/off-canvas-page-wrapper.html.twig' -->
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/html.html.twig' -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
