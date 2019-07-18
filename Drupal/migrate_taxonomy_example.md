@@ -62,7 +62,7 @@ source:
       p_id: "Parent ID"
 
 process:
-  tid: id
+##  tid: id  // if you cut this out Drupal will set tid
   name: name
   parent_id:
     -
@@ -82,6 +82,13 @@ destination:
   default_bundle: test_tags
 
 ```
+
+## Drush Migration Command
+    drush ms
+    drush migrate:import test_taxonomy_migration
+    drush migrate:import test_taxonomy_migration --limit=10
+
+
 
 ## Conclusion
 
