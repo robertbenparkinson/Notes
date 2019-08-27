@@ -1,0 +1,4 @@
+services:
+  bvisa.usercheck:
+    class: Drupal\bvisa\Services\UserCheck
+    arguments: []

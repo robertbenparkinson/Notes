@@ -1,0 +1,69 @@
+id: bvisa_res_opts_migration
+label: Import BVisa Response Options
+migration_groups:
+    - Response_Options import
+
+source:
+    plugin: csv
+    path: 'modules/custom/ovr/bvisa_res_opts_migration/assets/csv/bvisa_res_opts_migration_text.csv'
+    delimiter: ','
+    enclosure: '"'
+    header_row_count: 1
+    keys:
+        - ID
+    column_names:
+        0:
+            ID: "unique id"
+        1:
+            title: "title"
+        2:
+            body: "response option text"
+        3:
+            field_res_opts_projects: "project"
+        4:
+            field_res_opts_form_name: "name of webform"
+        5:
+            field_res_opts_language: "language"
+        6:
+            field_res_opts_question: "question"
+        7:
+            field_res_opts_question_id: "question id"
+        8:
+            field_res_opts_option: "option"
+        9:
+            field_res_opts_option_hide: "hide"
+        10:
+            field_res_opts_option_flag: "flag"
+        11:
+            field_res_opts_option_priority: "priority"
+        12:
+            field_res_opts_option_status: "status"
+        13:
+            field_res_opts_question_section1: "section one"
+        14:
+            field_res_opts_question_section2: "section two"
+        15:
+            field_res_opts_order: "order of response options"
+
+process:
+    title: title
+    body: body
+    field_res_opts_projects: field_res_opts_projects
+    field_res_opts_form_name: field_res_opts_form_name
+    field_res_opts_language: field_res_opts_language
+    field_res_opts_question: field_res_opts_question
+    field_res_opts_question_id: field_res_opts_question_id
+    field_res_opts_option: field_res_opts_option
+    field_res_opts_option_hide: field_res_opts_option_hide
+    field_res_opts_option_flag: field_res_opts_option_flag
+    field_res_opts_option_priority: field_res_opts_option_priority
+    field_res_opts_option_status: field_res_opts_option_status
+    field_res_opts_question_section1: field_res_opts_question_section1
+    field_res_opts_question_section2: field_res_opts_question_section2
+    field_res_opts_order: field_res_opts_order
+    type:
+        plugin: default_value
+        default_value: res_opts
+
+destination:
+    plugin: entity:node

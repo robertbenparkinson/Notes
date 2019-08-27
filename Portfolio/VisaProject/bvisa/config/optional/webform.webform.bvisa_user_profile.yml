@@ -1,0 +1,168 @@
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: false
+id: bvisa_user_profile
+title: 'BVisa User Profile'
+description: 'BVisa User Profile Questions'
+category: BVisa
+elements: "bvisa_user_profile_qid_0040:\n  '#type': textfield\n  '#title': Surname\n  '#access': true\nbvisa_user_profile_qid_0050:\n  '#type': textfield\n  '#title': 'Given Names'\n  '#access': true\nbvisa_user_profile_qid_0060:\n  '#type': textfield\n  '#title': 'Full Name in Native Alphabet'\n  '#access': true\n  '#states':\n    disabled:\n      ':input[name=\"bvisa_user_profile_qid_0070\"]':\n        checked: true\nbvisa_user_profile_qid_0070:\n  '#type': checkbox\n  '#title': 'Full Name in Native Language Not Applicable'\n  '#access': true\nbvisa_user_profile_qid_0080:\n  '#type': radios\n  '#title': 'Other Names'\n  '#access': true\n  '#options':\n    'yes': 'Yes'\n    'no': 'No'\nbvisa_user_profile_qid_0090:\n  '#type': textfield\n  '#title': 'Other Surname'\n  '#access': true\n  '#states':\n    visible:\n      ':input[name=\"bvisa_user_profile_qid_0080\"]':\n        value: 'yes'\nbvisa_user_profile_qid_0100:\n  '#type': textfield\n  '#title': 'Other Given Name'\n  '#access': true\n  '#states':\n    visible:\n      ':input[name=\"bvisa_user_profile_qid_0080\"]':\n        value: 'yes'\nbvisa_user_profile_qid_0120:\n  '#type': radios\n  '#title': 'Do you have a Telecode associated with your name?'\n  '#access': true\n  '#options':\n    'yes': 'Yes'\n    'no': 'No'\nbvisa_user_profile_qid_0130:\n  '#type': textfield\n  '#title': 'Surname Telecode'\n  '#access': true\n  '#states':\n    visible:\n      ':input[name=\"bvisa_user_profile_qid_0120\"]':\n        value: 'yes'\nbvisa_user_profile_qid_0140:\n  '#type': textfield\n  '#title': 'Given Name Telecode'\n  '#access': true\n  '#states':\n    visible:\n      ':input[name=\"bvisa_user_profile_qid_0120\"]':\n        value: 'yes'\nbvisa_user_profile_qid_0150:\n  '#type': radios\n  '#title': 'What is your gender?'\n  '#access': true\n  '#options':\n    male: Male\n    female: Female\nbvisa_user_profile_qid_0170:\n  '#type': datelist\n  '#title': 'Date of Birth'\n  '#date_part_order':\n    - year\n    - month\n    - day\n  '#access': true\nbvisa_user_profile_qid_0200:\n  '#type': textfield\n  '#title': 'City of Birth'\n  '#access': true\nbvisa_user_profile_qid_0210:\n  '#type': textfield\n  '#title': 'State or Province of Birth'\n  '#access': true\n  '#states':\n    disabled:\n      ':input[name=\"bvisa_user_profile_qid_0220\"]':\n        checked: true\nbvisa_user_profile_qid_0220:\n  '#type': checkbox\n  '#title': 'Not Applicable'\n  '#access': true\nbvisa_user_profile_qid_0230:\n  '#type': select\n  '#title': 'Country of Birth'\n  '#access': true\n  '#options': project_usa_countries_plus_mexico\nbvisa_user_profile_qid_0390:\n  '#type': textfield\n  '#title': 'Street Address (Line 1)'\n  '#access': true\nbvisa_user_profile_qid_0400:\n  '#type': textfield\n  '#title': 'Street Address (Line 2)'\n  '#access': true\nbvisa_user_profile_qid_0410:\n  '#type': textfield\n  '#title': City\n  '#access': true\nbvisa_user_profile_qid_0420:\n  '#type': textfield\n  '#title': 'State or Province'\n  '#access': true\n  '#states':\n    disabled:\n      ':input[name=\"bvisa_user_profile_qid_0430\"]':\n        checked: true\nbvisa_user_profile_qid_0430:\n  '#type': checkbox\n  '#title': 'Not Applicable'\n  '#access': true\nbvisa_user_profile_qid_0440:\n  '#type': textfield\n  '#title': 'Postal Code/Zone or Zip Code'\n  '#access': true\n  '#states':\n    disabled:\n      ':input[name=\"bvisa_user_profile_qid_0450\"]':\n        checked: true\nbvisa_user_profile_qid_0450:\n  '#type': checkbox\n  '#title': 'Not Applicable'\n  '#access': true\nbvisa_user_profile_qid_0460:\n  '#type': select\n  '#title': Country\n  '#access': true\n  '#options': project_usa_countries\nbvisa_user_profile_qid_0470:\n  '#type': radios\n  '#title': 'Is your Mailing Address the same as your Physical Address?'\n  '#access': true\n  '#options':\n    'yes': 'Yes'\n    'no': 'No'\nbvisa_user_profile_qid_0480:\n  '#type': textfield\n  '#title': 'Street Address (Line 1)'\n  '#access': true\n  '#states':\n    visible:\n      ':input[name=\"bvisa_user_profile_qid_0470\"]':\n        value: 'no'\nbvisa_user_profile_qid_0490:\n  '#type': textfield\n  '#title': 'Street Address (Line 2) Optional'\n  '#access': true\n  '#states':\n    visible:\n      ':input[name=\"bvisa_user_profile_qid_0470\"]':\n        value: 'no'\nbvisa_user_profile_qid_0500:\n  '#type': textfield\n  '#title': City\n  '#access': true\n  '#states':\n    visible:\n      ':input[name=\"bvisa_user_profile_qid_0470\"]':\n        value: 'no'\nbvisa_user_profile_qid_0510:\n  '#type': textfield\n  '#title': 'State or Province'\n  '#access': true\n  '#states':\n    visible:\n      ':input[name=\"bvisa_user_profile_qid_0470\"]':\n        value: 'no'\nbvisa_user_profile_qid_0520:\n  '#type': checkbox\n  '#title': 'Not Applicable'\n  '#access': true\n  '#states':\n    visible:\n      ':input[name=\"bvisa_user_profile_qid_0470\"]':\n        value: 'no'\n    disabled:\n      ':input[name=\"bvisa_user_profile_qid_0530\"]':\n        checked: true\nbvisa_user_profile_qid_0530:\n  '#type': textfield\n  '#title': 'Postal Code/Zone or ZIP Code'\n  '#access': true\n  '#states':\n    visible:\n      ':input[name=\"bvisa_user_profile_qid_0470\"]':\n        value: 'no'\n    disabled:\n      ':input[name=\"bvisa_user_profile_qid_0540\"]':\n        checked: true\nbvisa_user_profile_qid_0540:\n  '#type': checkbox\n  '#title': 'Not Applicable'\n  '#access': true\n  '#states':\n    visible:\n      ':input[name=\"bvisa_user_profile_qid_0470\"]':\n        value: 'no'\nbvisa_user_profile_qid_0550:\n  '#type': select\n  '#title': 'Country or Region'\n  '#access': true\n  '#options': project_usa_countries\n  '#states':\n    visible:\n      ':input[name=\"bvisa_user_profile_qid_0470\"]':\n        value: 'no'\nbvisa_user_profile_qid_0560:\n  '#type': textfield\n  '#title': 'Primary Telephone Number'\n  '#access': true\nbvisa_user_profile_qid_0570:\n  '#type': textfield\n  '#title': 'Secondary Telephone Number'\n  '#access': true\n  '#states':\n    disabled:\n      ':input[name=\"bvisa_user_profile_qid_0580\"]':\n        checked: true\nbvisa_user_profile_qid_0580:\n  '#type': checkbox\n  '#title': 'Not Applicable'\n  '#access': true\nbvisa_user_profile_qid_0590:\n  '#type': textfield\n  '#title': 'Work Telephone Number'\n  '#access': true\n  '#states':\n    disabled:\n      ':input[name=\"bvisa_user_profile_qid_0600\"]':\n        checked: true\nbvisa_user_profile_qid_0600:\n  '#type': checkbox\n  '#title': 'Not Applicable'\n  '#access': true\nbvisa_user_profile_qid_0610:\n  '#type': textfield\n  '#title': 'Email Address'\n  '#access': true"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_title: both
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_remote_addr: true
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: url_message
+  confirmation_title: ''
+  confirmation_message: 'Your User Profile information has been saved.'
+  confirmation_url: 'projects/usa/b-visa/user/[current-user:account-name]'
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }

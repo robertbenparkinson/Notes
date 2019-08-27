@@ -1,0 +1,61 @@
+$family
+$kids
+
+if ($kids == "yes"){
+    $kids = ", With Children';
+else{
+    $kids = ", Without Children";
+}
+
+
+
+if($family == "I prefer not to say"){
+    $bvisa_demograpics_family = 'I prefer not to say';
+}
+elseif {$family == 'Civil Union/Domestic Partnership'){
+    $bvisa_demograpics_family = $family.$kids;
+}
+elseif {$family == 'Common Law Marriage'){
+    $bvisa_demograpics_family = $family.$kids;
+}
+elseif {$family == 'Divorced'){
+    $bvisa_demograpics_family = $family.$kids;
+}
+elseif {$family == 'Legally Separated'){
+    $bvisa_demograpics_family = $family.$kids;
+}
+elseif {$family == 'Married'){
+    $bvisa_demograpics_family = $family.$kids;
+}
+elseif {$family == 'Other'){
+    $bvisa_demograpics_family = $family.$kids;
+}
+elseif {$family == 'Single'){
+    $bvisa_demograpics_family = $family.$kids;
+}
+elseif {$family == 'Widowed'){
+    $bvisa_demograpics_family = $family.$kids;
+}
+
+
+
+
+
+'Civil Union/Domestic Partnership, With Children'
+'Civil Union/Domestic Partnership, Without Children'
+'Common Law Marriage, With Children'
+'Common Law Marriage, Without Children'
+'Divorced, With Children'
+'Divorced, Without Children'
+'Legally Separated, With Children'
+'Legally Separated, Without Children'
+'Married, With Children'
+'Married, Without Children'
+'Other, With Children'
+'Other, Without Children'
+'Single, With Children'
+'Single, Without Children'
+'Widowed, With Children'
+'Widowed, Without Children'
+'I prefer not to say'
+

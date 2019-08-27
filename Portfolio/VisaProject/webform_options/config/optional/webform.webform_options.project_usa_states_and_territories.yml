@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+      - webform_options
+id: project_usa_states_and_territories
+label: 'A list of States and Territories for the United States'
+category: 'Ovr Custom Configuration'
+likert: false
+options: "'AK': 'ALASKA'\n'AL': 'ALABAMA'\n'AR': 'ARKANSAS'\n'AS': 'AMERICAN SAMOA'\n'AZ': 'ARIZONA'\n'CA': 'CALIFORNIA'\n'CO': 'COLORADO'\n'CT': 'CONNECTICUT'\n'DC': 'DISTRICT OF COLUMBIA'\n'DE': 'DELAWARE'\n'FL': 'FLORIDA'\n'GA': 'GEORGIA'\n'GU': 'GUAM'\n'HI': 'HAWAII'\n'IA': 'IOWA'\n'ID': 'IDAHO'\n'IL': 'ILLINOIS'\n'IN': 'INDIANA'\n'KS': 'KANSAS'\n'KY': 'KENTUCKY'\n'LA': 'LOUISIANA'\n'MA': 'MASSACHUSETTS'\n'MD': 'MARYLAND'\n'ME': 'MAINE'\n'MI': 'MICHIGAN'\n'MN': 'MINNESOTA'\n'MO': 'MISSOURI'\n'MP': 'NORTHERN MARIANA ISLANDS'\n'MS': 'MISSISSIPPI'\n'MT': 'MONTANA'\n'NC': 'NORTH CAROLINA'\n'ND': 'NORTH DAKOTA'\n'NE': 'NEBRASKA'\n'NH': 'NEW HAMPSHIRE'\n'NJ': 'NEW JERSEY'\n'NM': 'NEW MEXICO'\n'NV': 'NEVADA'\n'NY': 'NEW YORK'\n'OH': 'OHIO'\n'OK': 'OKLAHOMA'\n'OR': 'OREGON'\n'PA': 'PENNSYLVANIA'\n'PR': 'PUERTO RICO'\n'RI': 'RHODE ISLAND'\n'SC': 'SOUTH CAROLINA'\n'SD': 'SOUTH DAKOTA'\n'TN': 'TENNESSEE'\n'TX': 'TEXAS'\n'UT': 'UTAH'\n'VA': 'VIRGINIA'\n'VI': 'VIRGIN ISLANDS'\n'VT': 'VERMONT'\n'WA': 'WASHINGTON'\n'WI': 'WISCONSIN'\n'WV': 'WEST VIRGINIA'\n'WY': 'WYOMING'"

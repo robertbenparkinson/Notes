@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Response Options'
+type: res_opts
+description: 'The Response Options Content Type is used to provide responses to options selected by the users on the various webforms used throughout Ovr. They are not meant to directly be viewed by Ovr''s users. For Staff Only.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

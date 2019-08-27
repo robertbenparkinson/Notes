@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains bvisa_blackbox_age.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function bvisa_blackbox_age_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the bvisa_blackbox_age module.
+    case 'help.page.bvisa_blackbox_age':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The Black Box Model for the B Visa Class which installs the Age DB') . '</p>';
+      return $output;
+
+    default:
+  }
+}

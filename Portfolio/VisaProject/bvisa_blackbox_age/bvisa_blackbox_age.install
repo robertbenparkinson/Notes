@@ -1,0 +1,124 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the bvisa_blackbox_age.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Creates some default entries on this module custom table.
+ *
+ * @see hook_install()
+ *
+ * @ingroup bvisa_blackbox_age
+ */
+
+function bvisa_blackbox_age_install() {
+
+        $entries = [
+            [
+                'age' => 'under 18',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'age' => '18 to 24',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'age' => '25 to 34',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'age' => '35 to 44',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'age' => '45 to 54',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'age' => '55 to 64',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'age' => '65 to 74',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'age' => '75 or more',
+                'model_1' => 4,
+                'model_2' => 0,
+            ],
+            [
+                'age' => 'i prefer not to say',
+                'model_1' => 1,
+                'model_2' => 0,
+            ],
+        ];
+
+        $connection = \Drupal::database();
+        foreach ($entries as $entry) {
+            $connection->insert('bvisa_blackbox_age')->fields($entry)->execute();
+        }
+}
+
+/**
+ * Implements hook_schema().
+ *
+ * Defines the database tables used by this module.
+ *
+ * @see hook_schema()
+ *
+ * @ingroup bvisa_blackbox_age
+ */
+
+function bvisa_blackbox_age_schema() {
+    $schema['bvisa_blackbox_age'] = [
+        'description' => '',
+        'fields' => [
+            'id' => [
+                'type' => 'serial',
+                'not null' => TRUE,
+                'description' => 'Primary Key: Unique ID',
+            ],
+            'age' => [
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+                'description' => 'Age Group',
+            ],
+            'model_1' => [
+                'type' => 'int',
+                'not null' => TRUE,
+                'default' => 0,
+                'description' => 'First Model',
+            ],
+            'model_2' => [
+                'type' => 'int',
+                'not null' => TRUE,
+                'default' => 0,
+                'description' => 'Second Model',
+            ],
+        ],
+        'primary key' => ['id'],
+        'indexes' => [
+            'age' => ['age'],
+            'model_1' => ['model_1'],
+            'model_2' => ['model_2'],
+        ],
+    ];
+
+    return $schema;
+}
+
+

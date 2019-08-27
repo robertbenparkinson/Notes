@@ -1,0 +1,112 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the bvisa_blackbox_wages.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Creates some default entries on this module custom table.
+ *
+ * @see hook_install()
+ *
+ * @ingroup bvisa_blackbox_wages
+ */
+
+function bvisa_blackbox_wages_install() {
+
+        $entries = [
+            [
+                'wages' => '$0 to $19,999 per year',
+                'model_1' => 3,
+                'model_2' => 0,
+            ],
+            [
+                'wages' => '$20,000 to $39,999 per year',
+                'model_1' => 4,
+                'model_2' => 0,
+            ],
+            [
+                'wages' => '$40,000 to $59,999 per year',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'wages' => '$60,000 to $79,999 per year',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'wages' => '$80,000 to $99,999 per year',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'wages' => '$100,000+ per year',
+                'model_1' => 10,
+                'model_2' => 0,
+            ],
+            [
+                'wages' => 'i prefer not to say',
+                'model_1' => 2,
+                'model_2' => 0,
+            ],
+        ];
+
+        $connection = \Drupal::database();
+        foreach ($entries as $entry) {
+            $connection->insert('bvisa_blackbox_wages')->fields($entry)->execute();
+        }
+}
+
+/**
+ * Implements hook_schema().
+ *
+ * Defines the database tables used by this module.
+ *
+ * @see hook_schema()
+ *
+ * @ingroup bvisa_blackbox_wages
+ */
+
+function bvisa_blackbox_wages_schema() {
+    $schema['bvisa_blackbox_wages'] = [
+        'description' => '',
+        'fields' => [
+            'id' => [
+                'type' => 'serial',
+                'not null' => TRUE,
+                'description' => 'Primary Key: Unique ID',
+            ],
+            'wages' => [
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+                'description' => 'Wages Group',
+            ],
+            'model_1' => [
+                'type' => 'int',
+                'not null' => TRUE,
+                'default' => 0,
+                'description' => 'First Model',
+            ],
+            'model_2' => [
+                'type' => 'int',
+                'not null' => TRUE,
+                'default' => 0,
+                'description' => 'Second Model',
+            ],
+        ],
+        'primary key' => ['id'],
+        'indexes' => [
+            'wages' => ['wages'],
+            'model_1' => ['model_1'],
+            'model_2' => ['model_2'],
+        ],
+    ];
+
+    return $schema;
+}

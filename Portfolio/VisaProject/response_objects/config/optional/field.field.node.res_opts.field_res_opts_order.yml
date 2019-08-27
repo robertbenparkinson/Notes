@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_res_opts_order
+    - node.type.res_opts
+id: node.res_opts.field_res_opts_order
+field_name: field_res_opts_order
+entity_type: node
+bundle: res_opts
+label: res_opts_order
+description: 'Allows the options to be sort by order'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

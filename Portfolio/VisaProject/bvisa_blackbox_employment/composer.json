@@ -1,0 +1,14 @@
+{
+  "name": "drupal/bvisa_blackbox_employment",
+  "type": "drupal-module",
+  "description": "The Black Box Model for the B Visa Class which installs the Employment DB",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/bvisa_blackbox_employment",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/bvisa_blackbox_employment",
+    "source": "http://cgit.drupalcode.org/bvisa_blackbox_employment"
+  },
+  "require": { }
+}

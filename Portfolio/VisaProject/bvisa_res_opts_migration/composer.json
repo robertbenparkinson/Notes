@@ -1,0 +1,14 @@
+{
+  "name": "drupal/bvisa_res_opts_migration",
+  "type": "drupal-module",
+  "description": "The migration for the BVisa Response Options",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/bvisa_res_opts_migration",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/bvisa_res_opts_migration",
+    "source": "http://cgit.drupalcode.org/bvisa_res_opts_migration"
+  },
+  "require": { }
+}

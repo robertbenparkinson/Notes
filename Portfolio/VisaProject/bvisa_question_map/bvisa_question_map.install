@@ -1,0 +1,1787 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the bvisa_question_map.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Creates some default entries on this module custom table.
+ *
+ * @see hook_install()
+ *
+ * @ingroup bvisa_question_map
+ */
+
+function bvisa_question_map_install() {
+
+        $entries = [
+            [
+                'required_form_qid' => 'bvisa_required_qid_0010',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_0010',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0020',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0030',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0040',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0040',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0050',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0050',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0060',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0060',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0070',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0070',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0080',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0080',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0090',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0090',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0100',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0100',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0120',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0120',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0130',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0130',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0140',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0140',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0150',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0150',
+                'questions_form_qid' => 'bvisa_questions_qid_0150',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0160',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_0160',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0170',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0170',
+                'questions_form_qid' => 'bvisa_questions_qid_0170',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0180',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0190',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0200',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0200',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0210',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0210',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0220',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0220',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0230',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0230',
+                'questions_form_qid' => 'bvisa_questions_qid_0230',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0240',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_0240',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0250',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_0250',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0260',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_0260',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0270',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_0270',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0280',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0290',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_0290',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0300',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_0300',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0310',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0320',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0330',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0340',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0350',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0360',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0370',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0380',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0390',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0390',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0400',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0400',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0410',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0410',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0420',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0420',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0430',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0430',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0440',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0440',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0450',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0450',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0460',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0460',
+                'questions_form_qid' => 'bvisa_questions_qid_0460',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0470',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0470',
+                'questions_form_qid' => 'bvisa_questions_qid_0470',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0480',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0480',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0490',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0490',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0500',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0500',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0510',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0510',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0520',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0520',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0530',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0530',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0540',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0540',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0550',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0550',
+                'questions_form_qid' => 'bvisa_questions_qid_0550',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0560',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0560',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0570',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0570',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0580',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0580',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0590',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0590',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0600',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0600',
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0610',
+                'user_profile_form_qid' => 'bvisa_user_profile_qid_0610',
+                'questions_form_qid' => 'bvisa_questions_qid_0610',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0620',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0630',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0640',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0650',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0660',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0670',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0680',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0690',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0700',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0710',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0720',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0730',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0740',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0750',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0760',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0770',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0780',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0790',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0800',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0810',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0830',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0840',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_0840',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0850',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_0850',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0870',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_0870',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0880',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_0880',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0890',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_0890',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0900',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_0900',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0910',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_0910',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0920',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_0920',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0930',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0940',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0950',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_0950',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0960',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_0960',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0970',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0980',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_0990',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1000',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1010',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1020',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1030',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1040',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1050',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1060',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1070',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1080',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_1080',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1100',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_1100',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1110',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1120',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1130',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1140',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1150',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1160',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1170',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1180',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1190',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1200',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1210',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1220',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1230',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1240',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1250',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1260',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1270',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1280',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1290',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1300',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1310',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1320',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1330',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1340',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1350',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1360',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1370',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_1370',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1380',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1390',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1400',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1410',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1430',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_1430',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1440',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1450',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1460',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1470',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_1470',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1480',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_1480',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1500',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_1500',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1510',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1520',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1530',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1550',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_1550',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1560',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1570',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1580',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1590',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1600',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1610',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1620',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1630',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1640',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1650',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1660',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1670',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_1670',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1680',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_1680',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1690',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_1690',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1700',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_1700',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1710',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_1710',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1720',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_1720',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1730',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_1730',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1740',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_1740',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1750',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1760',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1770',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1780',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1790',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1800',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1810',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1820',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1830',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1840',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1850',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1860',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1870',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1890',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1900',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1910',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1920',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1930',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1940',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1950',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1960',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1970',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_1970',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1980',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_1980',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_1990',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2000',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2010',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2020',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2030',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2040',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2050',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2060',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2070',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2070',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2080',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2080',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2090',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2090',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2100',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2110',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2120',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2120',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2130',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2130',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2140',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2140',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2150',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2150',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2160',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2160',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2170',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2180',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2190',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2200',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2210',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2220',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2230',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2240',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2250',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2260',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2270',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2280',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2290',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2300',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2300',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2310',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2310',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2320',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2320',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2330',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2330',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2340',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2350',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2360',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2370',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2380',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2390',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2400',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2410',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2420',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2430',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2440',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2450',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2460',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2470',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2480',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2490',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2500',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2510',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2520',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2530',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2540',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2550',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2560',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2580',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2580',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2590',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2600',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2610',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2620',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2630',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2640',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2650',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2660',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2670',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2680',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2690',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2700',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2710',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2720',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2730',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2740',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2760',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2760',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2770',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2770',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2780',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2780',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2800',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2800',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2810',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2810',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2830',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2830',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2840',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2840',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2860',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2860',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2870',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2870',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2880',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2880',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2900',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2900',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2910',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2910',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2920',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2920',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2930',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2930',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2940',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2940',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2950',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2950',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2960',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2960',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2970',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2970',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2980',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2980',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_2990',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_2990',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3010',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3010',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3020',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3020',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3030',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3030',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3040',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3040',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3050',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3050',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3060',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3060',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3070',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3070',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3080',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3080',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3090',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3090',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3100',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3100',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3110',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3110',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3120',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3120',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3130',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3130',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3140',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3140',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3150',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3150',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3160',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3160',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3170',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3170',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3180',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3180',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3190',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3190',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3200',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3200',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3210',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3210',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3220',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3220',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3230',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3230',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3240',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3240',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3250',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3250',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3260',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3260',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3270',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3270',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3280',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3280',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3290',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3290',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3300',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3300',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3310',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3310',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3320',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3320',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3330',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3330',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3340',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3340',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3350',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3350',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3360',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3360',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3370',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3370',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3380',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3380',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3390',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3390',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3400',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3400',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3410',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3410',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3420',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3420',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3430',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3430',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3440',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3440',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3450',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3450',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3460',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3460',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3470',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3470',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3480',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3480',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3490',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3490',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3500',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3500',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3510',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3510',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3520',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => 'bvisa_questions_qid_3520',
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3530',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3540',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3560',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+            [
+                'required_form_qid' => 'bvisa_required_qid_3570',
+                'user_profile_form_qid' => NULL,
+                'questions_form_qid' => NULL,
+            ],
+
+        ];
+
+        $connection = \Drupal::database();
+        foreach ($entries as $entry) {
+            $connection->insert('bvisa_question_map')->fields($entry)->execute();
+        }
+}
+
+/**
+ * Implements hook_schema().
+ *
+ * Defines the database tables used by this module.
+ *
+ * @see hook_schema()
+ *
+ * @ingroup bvisa_question_map
+ */
+
+function bvisa_question_map_schema() {
+    $schema['bvisa_question_map'] = [
+        'description' => '',
+        'fields' => [
+            'id' => [
+                'type' => 'serial',
+                'not null' => TRUE,
+                'description' => 'Primary Key: Unique ID',
+            ],
+            'required_form_qid' => [
+                'type' => 'varchar',
+                'length' => 64,
+                'not null' => false,
+                'default' => '',
+                'description' => 'Required Form Question ID',
+            ],
+            'user_profile_form_qid' => [
+                'type' => 'varchar',
+                'length' => 64,
+                'not null' => false,
+                'default' => '',
+                'description' => 'User Profile Form Question ID',
+            ],
+            'questions_form_qid' => [
+                'type' => 'varchar',
+                'length' => 64,
+                'not null' => false,
+                'default' => '',
+                'description' => 'Question Form Question ID',
+            ],
+        ],
+        'primary key' => ['id'],
+        'indexes' => [
+            'required_form_qid' => ['required_form_qid'],
+            'user_profile_form_qid' => ['user_profile_form_qid'],
+            'questions_form_qid' => ['questions_form_qid'],
+        ],
+    ];
+
+    return $schema;
+}
+
+

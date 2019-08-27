@@ -1,0 +1,75 @@
+{# Twig Template for BVisa Results Page #}
+
+<h1>Black Box and Response Options Test Code</h1>
+
+<div>
+    <h2>Results from Black Box Age DB</h2>
+    <h3>{{ blackbox.age.value }}</h3>
+    <h3>{{ blackbox.age.score }}</h3>
+</div>
+<div>
+    <h2>Results from Black Box Education DB</h2>
+    <h3>{{ blackbox.education.value }}</h3>
+    <h3>{{ blackbox.education.score }}</h3>
+</div>
+<div>
+    <h2>Results from Black Box Employment DB</h2>
+    <h3>{{ blackbox.employment.value }}</h3>
+    <h3>{{ blackbox.employment.score }}</h3>
+</div>
+<div>
+    <h2>Results from Black Box Ethnicity DB</h2>
+    <h3>{{ blackbox.ethnicity.value }}</h3>
+    <h3>{{ blackbox.ethnicity.score }}</h3>
+</div>
+<div>
+    <h2>Results from Black Box Family DB</h2>
+    <h3>{{ blackbox.family.value }}</h3>
+    <h3>{{ blackbox.family.score }}</h3>
+</div>
+<div>
+    <h2>Results from Black Box Nationality DB</h2>
+    <h3>{{ blackbox.nationality.value }}</h3>
+    <h3>{{ blackbox.nationality.score }}</h3>
+</div>
+<div>
+    <h2>Results from Black Box Religion DB</h2>
+    <h3>{{ blackbox.religion.value }}</h3>
+    <h3>{{ blackbox.religion.score }}</h3>
+</div>
+<div>
+    <h2>Results from Black Box Sex DB</h2>
+    <h3>{{ blackbox.sex.value }}</h3>
+    <h3>{{ blackbox.sex.score }}</h3>
+</div>
+<div>
+    <h2>Results from Black Box Sexuality DB</h2>
+    <h3>{{ blackbox.sexuality.value }}</h3>
+    <h3>{{ blackbox.sexuality.score }}</h3>
+</div>
+<div>
+    <h2>Results from Black Box Wages DB</h2>
+    <h3>{{ blackbox.wages.value }}</h3>
+    <h3>{{ blackbox.wages.score }}</h3>
+</div>
+<div>
+    <h2>Total Score from Black Box DBs</h2>
+    <h3>{{ blackbox.total }}</h3>
+</div>
+
+
+<ul>
+    {% for r in response_options %}
+        {% if r.show == true %}
+            <div style=" border-radius: 10px; border: 10px solid slategrey; padding: 20px; margin-bottom: 10px">
+                <h2>{{ r.question }}</h2>
+                <h2>{{ r.option }}</h2>
+                <p>{{ r.body }}</p>
+            </div>
+        {% endif %}
+    {% endfor %}
+</ul>
+
+{#{{ dump(response_options|keys) }}#}
+
+{#{{ response_options.question_0010.title }}#}

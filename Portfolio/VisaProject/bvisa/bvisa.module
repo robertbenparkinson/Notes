@@ -1,0 +1,76 @@
+<?php
+
+/**
+ * @file
+ * Contains bvisa.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_theme().
+ */
+
+function bvisa_theme()
+{
+    return [
+        'bvisa' => [
+            'render element' => 'children',
+        ],
+        'bvisa_discovery_page' => [
+            'variables' => [
+                'title' => NULL,
+                'body' => NULL,
+            ],
+        ],
+        'bvisa_how_to_use_page' => [
+            'variables' => [
+                'title' => NULL,
+                'body' => NULL,
+            ],
+        ],
+        'bvisa_more_info_page' => [
+            'variables' => [
+                'title' => NULL,
+                'body' => NULL,
+            ],
+        ],
+        'bvisa_submit_now_page' => [
+            'variables' => [
+                'title' => NULL,
+                'body' => NULL,
+            ],
+        ],
+        'bvisa_results_page' => [
+            'variables' => [
+                'response_options' => NULL,
+                'test' => NULL,
+                'blackbox' => NULL,
+            ],
+        ],
+        'bvisa_user_username_page' => [
+            'variables' => [
+                'username' => NULL,
+                'email' => NULL,
+                'bvisa_user_data_webform_status_text' => NULL,
+                'bvisa_user_profile_webform_status_text' => NULL,
+                'bvisa_questions_webform_status_text' => NULL,
+                'bvisa_user_feedback_webform_status_text' => NULL,
+                'bvisa_user_followup_webform_status_text' => NULL,
+                'bvisa_required_webform_status_text' => NULL,
+                'bvisa_user_data_webform_status_link' => NULL,
+                'bvisa_user_profile_webform_status_link' => NULL,
+                'bvisa_questions_webform_status_link' => NULL,
+                'bvisa_user_feedback_webform_status_link' => NULL,
+                'bvisa_user_followup_webform_status_link' => NULL,
+                'bvisa_required_webform_status_link' => NULL,
+
+            ],
+        ],
+    ];
+}
+
+
+
+

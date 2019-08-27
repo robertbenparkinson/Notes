@@ -1,0 +1,83 @@
+{# Twig Template for BVisa User Username Page #}
+
+{{ username }}
+
+
+
+<h2> B Visa User Data Form Status</h2>
+
+    {% if bvisa_user_data_webform_status_link %}
+        <div style="background-color: Tomato">
+            <h3>{{ bvisa_user_data_webform_status_text }}</h3>
+            <a href="{{ bvisa_user_data_webform_status_link }}">Click here to complete the Form.</a>
+        </div>
+    {%  else %}
+        <div style="background-color: DodgerBlue">
+            <h3>{{ bvisa_user_data_webform_status_text }}</h3>
+        </div>
+    {% endif %}
+
+
+<h2> B Visa User Profile Form Status</h2>
+    {% if bvisa_user_profile_webform_status_link %}
+        <div style="background-color: Tomato">
+            <h3>{{ bvisa_user_profile_webform_status_text }}</h3>
+            <a href="{{ bvisa_user_profile_webform_status_link }}">Click here to complete the Form.</a>
+        </div>
+    {%  else %}
+        <div style="background-color: DodgerBlue">
+            <h3>{{ bvisa_user_profile_webform_status_text }}</h3>
+        </div>
+    {% endif %}
+
+
+<h2> B Visa Questions Form Status</h2>
+    {% if bvisa_questions_webform_status_link %}
+        <div style="background-color: Tomato">
+            <h3>{{ bvisa_questions_webform_status_text }}</h3>
+            <a href="{{ bvisa_questions_webform_status_link }}">Click here to complete the Form.</a>
+        </div>
+    {%  else %}
+        <div style="background-color: DodgerBlue">
+            <h3>{{ bvisa_questions_webform_status_text }}</h3>
+        </div>
+    {% endif %}
+
+
+<h2> B Visa Required DS-160 Form Status</h2>
+    {% if bvisa_required_webform_status_link %}
+        <div style="background-color: Tomato">
+            <h3>{{ bvisa_required_webform_status_text }}</h3>
+            <a href="{{ bvisa_required_webform_status_link }}">Click here to complete the Form.</a>
+        </div>
+    {%  else %}
+        <div style="background-color: DodgerBlue">
+            <h3>{{ bvisa_required_webform_status_text }}</h3>
+        </div>
+    {% endif %}
+
+
+<h2> B Visa User Feedback Form Status</h2>
+    {% if bvisa_user_feedback_webform_status_link %}
+        <div style="background-color: Tomato">
+            <h3>{{ bvisa_user_feedback_webform_status_text }}</h3>
+            <a href="{{ bvisa_user_feedback_webform_status_link }}">Click here to complete the Form.</a>
+        </div>
+    {%  else %}
+        <div style="background-color: DodgerBlue">
+            <h3>{{ bvisa_user_feedback_webform_status_text }}</h3>
+        </div>
+    {% endif %}
+
+
+<h2> B Visa User Follow Up Form Status</h2>
+    {% if bvisa_user_followup_webform_status_link %}
+        <div style="background-color: Tomato">
+            <h3>{{ bvisa_user_followup_webform_status_text }}</h3>
+            <a href="{{ bvisa_user_followup_webform_status_link }}">Click here to complete the Form.</a>
+        </div>
+    {%  else %}
+        <div style="background-color: DodgerBlue">
+            <h3>{{ bvisa_user_followup_webform_status_text }}</h3>
+        </div>
+    {% endif %}

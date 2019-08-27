@@ -1,0 +1,14 @@
+{
+  "name": "drupal/ovr_under_construction",
+  "type": "drupal-module",
+  "description": "Module for the Under Construction Page",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/ovr_under_construction",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/ovr_under_construction",
+    "source": "http://cgit.drupalcode.org/ovr_under_construction"
+  },
+  "require": { }
+}

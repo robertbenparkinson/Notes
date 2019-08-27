@@ -1,0 +1,21 @@
+uuid: c7561848-6407-4950-aa49-1b7d74376aed
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_res_opts_option
+field_name: field_res_opts_option
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

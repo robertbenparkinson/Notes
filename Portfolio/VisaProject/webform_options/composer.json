@@ -1,0 +1,14 @@
+{
+  "name": "drupal/ovr_webform_options",
+  "type": "drupal-module",
+  "description": "All of the helpful Webform Options used for Ovr",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/ovr_webform_options",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/ovr_webform_options",
+    "source": "http://cgit.drupalcode.org/ovr_webform_options"
+  },
+  "require": { }
+}

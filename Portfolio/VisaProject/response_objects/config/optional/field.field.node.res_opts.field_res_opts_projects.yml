@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_res_opts_projects
+    - node.type.res_opts
+id: node.res_opts.field_res_opts_projects
+field_name: field_res_opts_projects
+entity_type: node
+bundle: res_opts
+label: res_opts_projects
+description: 'The name of the specific project for the Response Option'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

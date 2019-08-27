@@ -1,0 +1,14 @@
+{
+  "name": "drupal/response_objects",
+  "type": "drupal-module",
+  "description": "The Response Objects creates a custome content type that is used to populate and edit the responses to various questions",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/response_objects",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/response_objects",
+    "source": "http://cgit.drupalcode.org/response_objects"
+  },
+  "require": { }
+}

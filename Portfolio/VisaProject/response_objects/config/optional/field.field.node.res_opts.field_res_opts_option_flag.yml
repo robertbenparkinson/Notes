@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_res_opts_option_flag
+    - node.type.res_opts
+id: node.res_opts.field_res_opts_option_flag
+field_name: field_res_opts_option_flag
+entity_type: node
+bundle: res_opts
+label: res_opts_option_flag
+description: 'The Flag/Not Flagged option for the Response Object'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Flagged
+  off_label: 'Not Flagged'
+field_type: boolean

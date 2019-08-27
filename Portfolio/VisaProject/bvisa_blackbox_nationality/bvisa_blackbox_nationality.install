@@ -1,0 +1,1349 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the bvisa_blackbox_nationality.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Creates some default entries on this module custom table.
+ *
+ * @see hook_install()
+ *
+ * @ingroup bvisa_blackbox_nationality
+ */
+
+function bvisa_blackbox_nationality_install() {
+
+        $entries = [
+            [
+                'nationality' => 'Afghanistan',
+                'model_1' => 3,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Albania',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Algeria',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'American Samoa',
+                'model_1' => 0,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Andorra',
+                'model_1' => 10,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Angola',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Anguilla',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Antigua And Barbuda',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Argentina',
+                'model_1' => 10,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Armenia',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Aruba',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Australia',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Austria',
+                'model_1' => 10,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Azerbaijan',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Bahamas',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Bahrain',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Bangladesh',
+                'model_1' => 4,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Barbados',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Belarus',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Belgium',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Belize',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Benin',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Bermuda',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Bhutan',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Bolivia',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Bonaire',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Bosnia-Herzegovina',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Botswana',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Brazil',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'British Indian Ocean Territory',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Brunei',
+                'model_1' => 10,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Bulgaria',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Burkina Faso',
+                'model_1' => 2,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Burma',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Burundi',
+                'model_1' => 2,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Cabo Verde',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Cambodia',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Cameroon',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Canada',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Cayman Islands',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Central African Republic',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Chad',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Chile',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'China',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Christmas Island',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Cocos Keeling Islands',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Colombia',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Comoros',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Congo Democratic Republic Of The',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Congo Republic Of The',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Cook Islands',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Costa Rica',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Cote D`Ivoire',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Croatia',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Cuba',
+                'model_1' => 2,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Curacao',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Cyprus',
+                'model_1' => 10,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Czech Republic',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Denmark',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Djibouti',
+                'model_1' => 3,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Dominica',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Dominican Republic',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Ecuador',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Egypt',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'El Salvador',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Equatorial Guinea',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Eritrea',
+                'model_1' => 3,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Estonia',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Eswatini',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Ethiopia',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Falkland Islands',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Faroe Islands',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Fiji',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Finland',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'France',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'French Guiana',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'French Polynesia',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'French Southern And Antarctic Territories',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Gabon',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Gambia The',
+                'model_1' => 3,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Gaza Strip',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Georgia',
+                'model_1' => 4,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Germany',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Ghana',
+                'model_1' => 4,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Gibraltar',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Greece',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Greenland',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Grenada',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Guadeloupe',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Guam',
+                'model_1' => 0,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Guatemala',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Guinea',
+                'model_1' => 4,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Guinea - Bissau',
+                'model_1' => 3,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Guyana',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Haiti',
+                'model_1' => 3,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Heard And Mcdonald Islands',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Holy See (Vatican City)',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Honduras',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Hong Kong',
+                'model_1' => 10,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Howland Island',
+                'model_1' => 0,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Hungary',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Iceland',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'India',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Indonesia',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Iran',
+                'model_1' => 4,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Iraq',
+                'model_1' => 4,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Ireland',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Israel',
+                'model_1' => 10,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Italy',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Jamaica',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Japan',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Jerusalem',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Jordan',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Kazakhstan',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Kenya',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Kiribati',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Korea Democratic Republic Of (North)',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Korea Republic Of (South)',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Kosovo',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Kuwait',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Kyrgyzstan',
+                'model_1' => 4,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Laos',
+                'model_1' => 4,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Latvia',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Lebanon',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Lesotho',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Liberia',
+                'model_1' => 4,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Libya',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Liechtenstein',
+                'model_1' => 10,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Lithuania',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Luxembourg',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Macau',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Macedonia',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Madagascar',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Malawi',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Malaysia',
+                'model_1' => 10,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Malden Island',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Maldives',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Mali',
+                'model_1' => 4,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Malta',
+                'model_1' => 10,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Marshall Islands',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Martinique',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Mauritania',
+                'model_1' => 3,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Mauritius',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Mayotte',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Mexico',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Micronesia',
+                'model_1' => 0,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Midway Islands',
+                'model_1' => 0,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Moldova',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Monaco',
+                'model_1' => 10,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Mongolia',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Montenegro',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Montserrat',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Morocco',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Mozambique',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Namibia',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Nauru',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Nepal',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Netherlands',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'New Caledonia',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'New Zealand',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Nicaragua',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Niger',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Nigeria',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Niue',
+                'model_1' => 0,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Norfolk Island',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'North Mariana Islands',
+                'model_1' => 0,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Northern Ireland',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Norway',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Oman',
+                'model_1' => 10,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Pakistan',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Palau',
+                'model_1' => 2,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Palmyra Atoll',
+                'model_1' => 0,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Panama',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Papua New Guinea',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Paraguay',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Peru',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Philippines',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Pitcairn Islands',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Poland',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Portugal',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Puerto Rico',
+                'model_1' => 0,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Qatar',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Reunion',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Romania',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Russia',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Rwanda',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Saba Island',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Saint Martin',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Samoa',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'San Marino',
+                'model_1' => 10,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Sao Tome And Principe',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Saudi Arabia',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Senegal',
+                'model_1' => 4,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Serbia',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Seychelles',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Sierra Leone',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Singapore',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Sint Maarten',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Slovakia',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Slovenia',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Solomon Islands',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Somalia',
+                'model_1' => 2,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'South Africa',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'South Georgia And The South Sandwich Island',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'South Sudan',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Spain',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Sri Lanka',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'St. Eustatius',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'St. Helena',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'St. Kitts And Nevis',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'St. Lucia',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'St. Pierre And Miquelon',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'St. Vincent And The Grenadines',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Sudan',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Suriname',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Svalbard',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Sweden',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Switzerland',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Syria',
+                'model_1' => 4,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Taiwan',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Tajikistan',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Tanzania',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Thailand',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Timor-Leste',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Togo',
+                'model_1' => 4,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Tokelau',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Tonga',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Trinidad And Tobago',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Tunisia',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Turkey',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Turkmenistan',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Turks And Caicos Islands',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Tuvalu',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Uganda',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Ukraine',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'United Arab Emirates',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'United Kingdom',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'United States Of America',
+                'model_1' => 0,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Uruguay',
+                'model_1' => 10,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Uzbekistan',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Vanuatu',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Venezuela',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Vietnam',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Virgin Islands (U.S.)',
+                'model_1' => 0,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Virgin Islands British',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Wake Island',
+                'model_1' => 0,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Wallis And Futuna Islands',
+                'model_1' => 9,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'West Bank',
+                'model_1' => 5,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Western Sahara',
+                'model_1' => 0,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Yemen',
+                'model_1' => 4,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Zambia',
+                'model_1' => 8,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'Zimbabwe',
+                'model_1' => 7,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'I Prefer Not To Say',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+            [
+                'nationality' => 'No Nationality',
+                'model_1' => 6,
+                'model_2' => 0,
+            ],
+        ];
+
+        $connection = \Drupal::database();
+        foreach ($entries as $entry) {
+            $connection->insert('bvisa_blackbox_nationality')->fields($entry)->execute();
+        }
+}
+
+/**
+ * Implements hook_schema().
+ *
+ * Defines the database tables used by this module.
+ *
+ * @see hook_schema()
+ *
+ * @ingroup bvisa_blackbox_nationality
+ */
+
+function bvisa_blackbox_nationality_schema() {
+    $schema['bvisa_blackbox_nationality'] = [
+        'description' => '',
+        'fields' => [
+            'id' => [
+                'type' => 'serial',
+                'not null' => TRUE,
+                'description' => 'Primary Key: Unique ID',
+            ],
+            'nationality' => [
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+                'description' => 'Nationality Group',
+            ],
+            'model_1' => [
+                'type' => 'int',
+                'not null' => TRUE,
+                'default' => 0,
+                'description' => 'First Model',
+            ],
+            'model_2' => [
+                'type' => 'int',
+                'not null' => TRUE,
+                'default' => 0,
+                'description' => 'Second Model',
+            ],
+        ],
+        'primary key' => ['id'],
+        'indexes' => [
+            'nationality' => ['nationality'],
+            'model_1' => ['model_1'],
+            'model_2' => ['model_2'],
+        ],
+    ];
+
+    return $schema;
+}
+
+

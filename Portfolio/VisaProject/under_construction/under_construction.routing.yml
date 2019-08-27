@@ -1,0 +1,8 @@
+
+ovr_under_construction.under_construction_controller_underconstruction_page:
+  path: '/under-construction'
+  defaults:
+    _controller: '\Drupal\ovr_under_construction\Controller\UnderConstructionController::underconstruction_page'
+    _title: 'underconstruction_page'
+  requirements:
+    _permission: 'access content'

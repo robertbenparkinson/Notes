@@ -1,0 +1,111 @@
+bvisa.b_visa_controller_bvisa_page:
+  path: '/projects/usa/b-visa'
+  defaults:
+    _controller: '\Drupal\bvisa\Controller\BVisaController::bvisa_page'
+    _title: 'B Visa Page'
+  requirements:
+    _permission: 'access content'
+
+bvisa.b_visa_controller_bvisa_discovery_page:
+  path: 'projects/usa/b-visa/discovery'
+  defaults:
+    _controller: '\Drupal\bvisa\Controller\BVisaController::bvisa_discovery_page'
+    _title: 'B Visa Discovery Page'
+  requirements:
+    _permission: 'access content'
+
+bvisa.b_visa_controller_bvisa_user_page:
+  path: 'projects/usa/b-visa/user'
+  defaults:
+    _controller: '\Drupal\bvisa\Controller\BVisaController::bvisa_user_page'
+    _title: 'B Visa User Page'
+  requirements:
+    _permission: 'access content'
+
+bvisa.b_visa_controller_bvisa_user_username_page:
+  path: 'projects/usa/b-visa/user/{username}'
+  defaults:
+    _controller: '\Drupal\bvisa\Controller\BVisaController::bvisa_user_username_page'
+    _title: 'B Visa User Page'
+  requirements:
+    _permission: 'access content'
+
+bvisa.b_visa_controller_bvisa_user_username_profile_page:
+  path: 'projects/usa/b-visa/user/{username}/profile'
+  defaults:
+    _controller: '\Drupal\bvisa\Controller\BVisaController::bvisa_user_username_profile_page'
+    _title: 'B Visa User Profile Page'
+  requirements:
+    _permission: 'access content'
+
+bvisa.b_visa_controller_bvisa_how_to_use_page:
+  path: 'projects/usa/b-visa/how-to-use'
+  defaults:
+    _controller: '\Drupal\bvisa\Controller\BVisaController::bvisa_how_to_use_page'
+    _title: 'B Visa How To Use Page'
+  requirements:
+    _permission: 'access content'
+
+bvisa.b_visa_controller_bvisa_user_data_page:
+  path: 'projects/usa/b-visa/user/{username}/data'
+  defaults:
+    _controller: '\Drupal\bvisa\Controller\BVisaController::bvisa_user_data_page'
+    _title: 'B Visa User Data Page'
+  requirements:
+    _permission: 'access content'
+
+bvisa.b_visa_controller_bvisa_questions_page:
+  path: 'projects/usa/b-visa/questions'
+  defaults:
+    _controller: '\Drupal\bvisa\Controller\BVisaController::bvisa_questions_page'
+    _title: 'B Visa Questions Page'
+  requirements:
+    _permission: 'access content'
+
+bvisa.b_visa_controller_bvisa_results_page:
+  path: 'projects/usa/b-visa/results'
+  defaults:
+    _controller: '\Drupal\bvisa\Controller\BVisaController::bvisa_results_page'
+    _title: 'B Visa Results Page'
+  requirements:
+    _permission: 'access content'
+
+bvisa.b_visa_controller_bvisa_feedback_page:
+  path: 'projects/usa/b-visa/feedback'
+  defaults:
+    _controller: '\Drupal\bvisa\Controller\BVisaController::bvisa_feedback_page'
+    _title: 'B Visa Feedback Page'
+  requirements:
+    _permission: 'access content'
+
+bvisa.b_visa_controller_bvisa_follow_up_page:
+  path: 'projects/usa/b-visa/follow-up'
+  defaults:
+    _controller: '\Drupal\bvisa\Controller\BVisaController::bvisa_follow_up_page'
+    _title: 'B Visa Follow Up Page'
+  requirements:
+    _permission: 'access content'
+
+bvisa.b_visa_controller_bvisa_more_information_page:
+  path: 'projects/usa/b-visa/more-information'
+  defaults:
+    _controller: '\Drupal\bvisa\Controller\BVisaController::bvisa_more_information_page'
+    _title: 'B Visa More Information Page'
+  requirements:
+    _permission: 'access content'
+
+bvisa.b_visa_controller_bvisa_submit_now_page:
+  path: 'projects/usa/b-visa/submit-now'
+  defaults:
+    _controller: '\Drupal\bvisa\Controller\BVisaController::bvisa_submit_now_page'
+    _title: 'B Visa Submit Now Page'
+  requirements:
+    _permission: 'access content'
+
+bvisa.b_visa_controller_bvisa_ds160_required_questions:
+  path: 'projects/usa/b-visa/required'
+  defaults:
+    _controller: '\Drupal\bvisa\Controller\BVisaController::bvisa_ds160_required_questions'
+    _title: 'B Visa Required Questions for DS-160 Form'
+  requirements:
+    _permission: 'access content'

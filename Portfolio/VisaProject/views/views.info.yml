@@ -1,0 +1,5 @@
+name: 'Ovr Views'
+type: module
+description: 'Views for Ovr'
+core: 8.x
+package: 'Custom'

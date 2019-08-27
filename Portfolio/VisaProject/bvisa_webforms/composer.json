@@ -1,0 +1,14 @@
+{
+  "name": "drupal/bvisa_webforms",
+  "type": "drupal-module",
+  "description": "Webforms for the BVisa Class",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/bvisa_webforms",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/bvisa_webforms",
+    "source": "http://cgit.drupalcode.org/bvisa_webforms"
+  },
+  "require": { }
+}

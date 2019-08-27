@@ -1,0 +1,14 @@
+{
+  "name": "drupal/ovr_views",
+  "type": "drupal-module",
+  "description": "Views for Ovr",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/ovr_views",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/ovr_views",
+    "source": "http://cgit.drupalcode.org/ovr_views"
+  },
+  "require": { }
+}

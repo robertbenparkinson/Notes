@@ -1,0 +1,5 @@
+name: 'BVisa Webforms'
+type: module
+description: 'Webforms for the BVisa Class'
+core: 8.x
+package: 'Ovr'

@@ -1,0 +1,5 @@
+name: 'Response Objects'
+type: module
+description: 'The Response Objects creates a custome content type that is used to populate and edit the responses to various questions'
+core: 8.x
+package: 'Ovr'

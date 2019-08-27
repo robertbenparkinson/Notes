@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains ovr_under_construction.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ovr_under_construction_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ovr_under_construction module.
+    case 'help.page.ovr_under_construction':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module for the Under Construction Page') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ovr_under_construction_theme() {
+  return [
+    'ovr_under_construction' => [
+      'render element' => 'children',
+    ],
+  ];
+}

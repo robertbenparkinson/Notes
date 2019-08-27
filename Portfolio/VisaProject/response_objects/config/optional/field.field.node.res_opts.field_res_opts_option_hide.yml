@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_res_opts_option_hide
+    - node.type.res_opts
+id: node.res_opts.field_res_opts_option_hide
+field_name: field_res_opts_option_hide
+entity_type: node
+bundle: res_opts
+label: res_opts_option_hide
+description: 'The Show/Hide option for the Response Object'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Show This Option'
+  off_label: 'Hide this Option'
+field_type: boolean

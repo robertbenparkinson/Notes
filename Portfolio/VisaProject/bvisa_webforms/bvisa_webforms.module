@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains bvisa_webforms.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function bvisa_webforms_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the bvisa_webforms module.
+    case 'help.page.bvisa_webforms':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Webforms for the BVisa Class') . '</p>';
+      return $output;
+
+    default:
+  }
+}

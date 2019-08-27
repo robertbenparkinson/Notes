@@ -1,0 +1,14 @@
+{
+  "name": "drupal/bvisa_question_map",
+  "type": "drupal-module",
+  "description": "The map for the BVisa Questions",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/bvisa_question_map",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/bvisa_question_map",
+    "source": "http://cgit.drupalcode.org/bvisa_question_map"
+  },
+  "require": { }
+}

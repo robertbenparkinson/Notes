@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains response_objects.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function response_objects_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the response_objects module.
+    case 'help.page.response_objects':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The Response Objects creates a custome content type that is used to populate and edit the responses to various questions') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function response_objects_theme() {
+  return [
+    'response_objects' => [
+      'render element' => 'children',
+    ],
+  ];
+}

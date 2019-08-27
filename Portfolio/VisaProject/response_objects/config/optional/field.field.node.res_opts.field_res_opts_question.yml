@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_res_opts_question
+    - node.type.res_opts
+id: node.res_opts.field_res_opts_question
+field_name: field_res_opts_question
+entity_type: node
+bundle: res_opts
+label: res_opts_question
+description: 'The Question field for the Response Option'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

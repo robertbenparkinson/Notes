@@ -1,0 +1,14 @@
+{
+  "name": "drupal/bvisa_blackbox_education",
+  "type": "drupal-module",
+  "description": "The Black Box Model for the B Visa Class which installs the Education DB",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/bvisa_blackbox_education",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/bvisa_blackbox_education",
+    "source": "http://cgit.drupalcode.org/bvisa_blackbox_education"
+  },
+  "require": { }
+}
