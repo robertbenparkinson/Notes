@@ -28,8 +28,8 @@
         <entry file="file://$PROJECT_DIR$/Portfolio/VisaProject/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="16874">
-                <caret line="587" column="4" lean-forward="true" selection-start-line="587" selection-start-column="4" selection-end-line="587" selection-end-column="4" />
+              <first_editor relative-caret-position="1005">
+                <caret line="580" column="3" selection-start-line="580" selection-start-column="3" selection-end-line="580" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -116,10 +116,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="362" />
-    <option name="y" value="46" />
-    <option name="width" value="1485" />
-    <option name="height" value="1040" />
+    <option name="x" value="451" />
+    <option name="y" value="56" />
+    <option name="width" value="1858" />
+    <option name="height" value="1300" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -134,17 +134,6 @@
             <path>
               <item name="Notes" type="b2602c69:ProjectViewProjectNode" />
               <item name="Notes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Notes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Notes" type="462c0819:PsiDirectoryNode" />
-              <item name="Portfolio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Notes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Notes" type="462c0819:PsiDirectoryNode" />
-              <item name="Portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="VisaProject" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -243,17 +232,17 @@
       <workItem from="1564568388238" duration="12000" />
       <workItem from="1564728943087" duration="25000" />
       <workItem from="1566464229332" duration="17500000" />
-      <workItem from="1566895376980" duration="8234000" />
+      <workItem from="1566895376980" duration="8982000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63421000" />
+    <option name="totallyTimeSpent" value="64169000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16311301" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20509383" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -588,8 +577,8 @@
     <entry file="file://$PROJECT_DIR$/Portfolio/VisaProject/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="16874">
-            <caret line="587" column="4" lean-forward="true" selection-start-line="587" selection-start-column="4" selection-end-line="587" selection-end-column="4" />
+          <first_editor relative-caret-position="1005">
+            <caret line="580" column="3" selection-start-line="580" selection-start-column="3" selection-end-line="580" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
