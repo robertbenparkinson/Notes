@@ -563,7 +563,7 @@ destination:
 
 ```
 
-## B VISA SUBMISSION MODULE
+## B Visa Submission Module
 
 Unfortunately this is where it all fell apart. My business partners were eager to find a way to automatically submit the user data we collected in the first half of the MVP (B Visa Module) to the US Government's [CEAC/DS-160](https://ceac.state.gov/genniv/) site, but this was no easy task.
 
@@ -576,6 +576,6 @@ Initially I tried using Javascript, but the problems with cross-scripting quickl
 I then turned to Python. Using Flask I was able to build a local test app that was able to take user input information from the Drupal Webform on one site and input it on a third party site. Needless to say I was very excited. 
 
 ### The End
-Unfortunately before I was able to go any further my business partner's funding fell through and the project was shelved. This was horrible disappointing, but looking back on the project I am proud of the complex work that I have accomplished work on my own. Given a chance, I will make an excellent addition to your web development team.
+Unfortunately before I was able to go any further my business partner's funding fell through and the project was shelved. This was horribly disappointing, but looking back on the project I am proud of the complex work that I have accomplished work on my own. Given a chance, I will make an excellent addition to your web development team.
 
 Ben    
