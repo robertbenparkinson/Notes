@@ -48,3 +48,16 @@ function gorn_theme() {
 ```html
 {{ gorn_webform }}
 ```
+
+### Get Term Name from Reference Entity
+
+```php
+
+foreach ($node->get('field_entity_function')->referencedEntities() as $enty){
+
+    $term = Term::load($enty->$field_custom->target_id);
+    $name = $term->getName();
+    
+}
+```
+
