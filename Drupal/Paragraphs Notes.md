@@ -1,5 +1,5 @@
 # Paragraph Notes
-Paragraphs are great but they are a big of a pain when it comes to extracting the data out of them.
+Paragraphs are great but they are a bit of a pain when it comes to extracting the data out of them.
 
 ```php
 
